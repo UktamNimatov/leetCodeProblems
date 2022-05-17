@@ -1,0 +1,2 @@
+public class ProblemN20 {
+}

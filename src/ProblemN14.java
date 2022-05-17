@@ -2,12 +2,14 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
+import java.util.logging.LogManager;
 import java.util.logging.Logger;
 
 public class ProblemN14 {
-    private static Logger logger;
 
     public static void main(String[] args) {
+
+        var masd = 1;
 //        String[] strings = {"flower", "flow", "flight"};
 //        System.out.println(longestCommonPrefix(strings));
 //        String[] strs = {"dog","racecar","car"};
@@ -32,7 +34,8 @@ public class ProblemN14 {
                 return "";
             }
         }
-        lengths.sort(Comparator.naturalOrder());
+        Collections.sort(lengths);
+//        lengths.sort(Comparator.naturalOrder());
         int minLength = lengths.get(0);
 
         StringBuilder toReturn = new StringBuilder();

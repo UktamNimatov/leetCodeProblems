@@ -9,6 +9,6 @@ public class Solution {
         if (root == null) return 0;
         int leftCount = minDepth(root.left);
         int rightCount = minDepth(root.right);
-        return (leftCount == 0 || rightCount == 0) ? 1 : Math.min(leftCount, rightCount) + 1;
+        return (leftCount == 0 || rightCount == 0) ? leftCount + rightCount + 1 : Math.min(leftCount, rightCount) + 1;
     }
 }

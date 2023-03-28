@@ -6,12 +6,10 @@ public class Solution {
     }
 
     public ListNode remoteNthFromEnd(ListNode head, int n) {
-        int length = 0;
-        ListNode result = new ListNode();
-        head.val = result.val;
+        int counter = 1;
         while (head.next != null) {
-            length++;
+            counter++;
         }
-        return result;
+        return new ListNode();
     }
 }
